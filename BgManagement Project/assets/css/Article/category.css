@@ -1,0 +1,19 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e2e2e2;
+}
+.layui-card {
+  width: 95%;
+  margin: 10px auto;
+}
+.layui-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.layui-card-header span {
+  font-size: 20px;
+  font-weight: bold;
+}

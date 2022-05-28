@@ -1,0 +1,47 @@
+input::-ms-reveal {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: url(/assets/images/login_bg.jpg) no-repeat;
+  background-size: cover;
+}
+.LoginAndReg {
+  width: 400px;
+  height: 310px;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* 定位的方式把盒子放到中间 */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.LoginAndReg .title {
+  height: 60px;
+  background: url(/assets/images/login_title.png) no-repeat center;
+}
+.layui-form {
+  padding: 0 40px;
+}
+.login1,
+.reg1 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.layui-form-item {
+  position: relative;
+}
+.layui-form-item i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+.layui-form-item input {
+  padding-left: 30px;
+}

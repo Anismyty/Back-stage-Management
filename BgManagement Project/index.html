@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/fonts/iconfont.css">
+    <!-- JS文件引入 -->
+    <script src="./assets/lib/jquery.js"></script>
+    <script src="./assets/js/toolBase设置.js"></script>
+    <script src="./assets/js/index.js"></script>
+
+</head>
+
+<body>
+    <div class="layui-layout layui-layout-admin">
+        <!-- 头部区域 -->
+        <div class="layui-header">
+            <!-- logo图片 -->
+            <div class="layui-logo layui-hide-xs">
+                <img src="./assets/images/logo_002.png" class="logo" alt="">
+            </div>
+            <!-- 右侧导航 -->
+            <ul class="layui-nav layui-layout-right">
+                <!-- 个人中心 -->
+                <li class="layui-nav-item">
+                    <a href="javascript:;" class="top_center">
+                        <img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"
+                            class="layui-nav-img">
+                        <span class="text-avatar">A</span>
+                        个人中心
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="./home/Personal Center/Basic information.html" target="fm">基本资料</a></dd>
+                        <dd><a href="./home/Personal Center/avatar.html" target="fm">更换头像</a></dd>
+                        <dd><a href="./home/Personal Center/repassword.html" target="fm">重置密码</a></dd>
+                    </dl>
+                </li>
+                <!-- 退出 -->
+                <li class="layui-nav-item">
+                    <a href="javascript:;" id="btnLogOut">
+                        <span class="iconfont icon-tuichu"></span>
+                        退出
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 左侧导航区域-->
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <!-- 名字标签 -->
+                <div class="sculpture">
+                    <img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"
+                        class="layui-nav-img">
+                    <span class="text-avatar">A</span>
+                    欢迎光临，<span class="person"></span>
+                </div>
+                <!-- 选项卡 -->
+                <ul class="layui-nav layui-nav-tree" lay-shrink="all">
+                    <li class="layui-nav-item layui-this">
+                        <a href="./home/dashboard.html" target="fm">
+                            <i class="iconfont icon-home"></i>
+                            首页
+                        </a>
+                    </li>
+                    <!-- 文章管理 -->
+                    <li class="layui-nav-item">
+                        <a href="javascript:;"><i class="iconfont icon-16"></i>文章管理</a>
+                        <dl class="layui-nav-child">
+                            <dd><a target="fm" href="./home/Article/category.html"><i
+                                        class="layui-icon">&#xe653;</i>文章类别</a></dd>
+                            <dd><a target="fm" href="./home/Article/list.html"><i
+                                        class="layui-icon">&#xe653;</i>文章列表</a></dd>
+                            <dd><a target="fm" href="./home/Article/publish .html"><i
+                                        class="layui-icon">&#xe653;</i>发表文章</a></dd>
+                        </dl>
+                    </li>
+                    <!-- 个人中心 -->
+                    <li class="layui-nav-item">
+                        <a href="javascript:;"><i class="iconfont icon-user"></i>个人中心</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="./home/Personal Center/Basic information.html" target="fm"><i
+                                        class="layui-icon">&#xe653;</i>基本资料</a></dd>
+                            <dd><a href="./home/Personal Center/avatar.html" target="fm"><i
+                                        class="layui-icon">&#xe653;</i>更换头像</a></dd>
+                            <dd><a href="./home/Personal Center/repassword.html" target="fm"><i
+                                        class="layui-icon">&#xe653;</i>重置密码</a></dd>
+                        </dl>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- 内容主体区域 -->
+        <div class="layui-body">
+            <iframe src="/home/dashboard.html" frameborder="0" name="fm">
+                内容主体区域。记得修改 layui.css 和 js 的路径
+            </iframe>
+        </div>
+
+        <!-- 底部固定区域 -->
+        <div class="layui-footer">
+            <em>黄妙妙</em>
+            1051735098@qq.com
+        </div>
+    </div>
+    <!-- 导入layui的js文件 -->
+    <script src="./assets/lib/layui/layui.all.js"></script>
+</body>
+
+</html>

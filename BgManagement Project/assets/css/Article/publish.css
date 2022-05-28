@@ -1,0 +1,38 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e2e2e2;
+}
+body {
+  padding: 15px;
+  background-color: #e2e2e2;
+}
+.layui-card-header {
+  font-size: 20px;
+  font-weight: bold;
+}
+.cover-box {
+  display: flex;
+}
+.cover-left {
+  width: 400px;
+  height: 280px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.cover-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-preview {
+  width: 200px;
+  height: 140px;
+  background-color: #ccc;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-align: center;
+  line-height: 140px;
+  color: #e2e2e2;
+}

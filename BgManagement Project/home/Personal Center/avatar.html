@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="../../assets/css/Personal Center/avatar.css">
+    <!-- 剪裁专属 -->
+    <link rel="stylesheet" href="/assets/lib/cropper/cropper.css">
+    <!-- 一些基础的js -->
+    <script src="/assets/lib/axios.js"></script>
+    <script src="/assets/lib/layui/layui.all.js"></script>
+    <script src="../../assets/lib/jquery.js"></script>
+    <script src="/assets/js/toolBase设置.js"></script>
+    <!-- 剪裁附属js -->
+    <script src="/assets/lib/cropper/Cropper.js"></script>
+    <script src="/assets/lib/cropper/jquery-cropper.js"></script>
+    <!-- myself——js -->
+    <script src="/assets/js/Personal Center/avatar.js"></script>
+</head>
+
+<body>
+    <div class="layui-card">
+        <div class="layui-card-header">更换头像 | <i>Change The Avatar</i></div>
+        <div class="layui-card-body">
+            <!-- 头像的剪裁用cropper.css -->
+            <div class="row1">
+                <!-- 大图 -->
+                <div class="cropper-box">
+                    <img src="/assets/images/1.jpeg" id="image" alt="">
+                </div>
+                <!-- 两个预览 -->
+                <div class="preview-box">
+                    <div class="n">
+                        <div class="img-preview w100"></div>
+                        <p class="size">100 x 100</p>
+                    </div>
+                    <div class="n">
+                        <div class="img-preview w50"></div>
+                        <p class="size">50 x 50</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 按钮 -->
+            <div class="row2">
+                <!-- accept可以指定input的选择文件类型 -->
+                <input type="file" id="file" style="display: none;" accept="image/png,image/jpeg" />
+                <button type="button" class="layui-btn" id="btnChoseImg">
+                    <i class="layui-icon">&#xe67c;</i>上传图片
+                </button>
+                <button type="button" class="layui-btn layui-btn-danger">确定</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

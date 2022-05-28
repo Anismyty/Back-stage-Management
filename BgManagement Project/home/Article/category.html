@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="/assets/css/Article/category.css">
+    <!-- 尝试axios -->
+    <script src="/assets/lib/axios.js"></script>
+    <!-- <script src="/assets/js/toolBaseAxios.js"></script> -->
+    <!-- 基础js -->
+    <script src="/assets/lib/jquery.js"></script>
+    <script src="/assets/lib/layui/layui.all.js"></script>
+    <!-- 模板引擎 -->
+    <script src="/assets/lib/template-web.js"></script>
+    <!-- 自己的js -->
+    <script src="/assets/js/Article/category.js"></script>
+</head>
+
+<body>
+    <div class="layui-card">
+        <div class="layui-card-header">
+            <span>文章类别管理 | <i>Category Management</i></span>
+            <button type="button" class="layui-btn layui-btn-sm layui-btn-normal">添加类别</button>
+        </div>
+        <div class="layui-card-body">
+            <table class="layui-table">
+                <colgroup>
+                    <col width="500">
+                    <col width="500">
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>分类名称</th>
+                        <th>English</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <!-- 自动生成 -->
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <!-- 定义模板引擎 -->
+    <script type="text/html" id="model">
+        {{each data}}
+        <tr>
+            <td>{{$value.name}}</td>
+            <td>{{$value.alias}}</td>
+            <td>
+                <a class="layui-btn layui-btn-sm edit" href="javascript:;" id="{{$value.Id}}">编辑</a>
+                <a class="layui-btn layui-btn-sm layui-btn-danger del" href="javascript:;" id="{{$value.Id}}">删除</a>
+            </td>
+        </tr>
+        {{/each}}
+        
+    </script>
+</body>
+
+</html>
